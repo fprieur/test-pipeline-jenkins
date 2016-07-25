@@ -3,12 +3,12 @@
 
 node {
    // Mark the code checkout 'stage'....
-   stage 'checkout'
+   stage 'git'
 
    // Get some code from a GitHub repository
    git url: 'https://github.com/fprieur/test-pipeline-jenkins'
 
 
-   stage 'build'
-   sh "bonjour henri"
+   stage 'bonjour'
+   echo "bonjour henri"
 }
